@@ -1,5 +1,7 @@
 import { React, useEffect } from 'react'
 
+import Header from './sections/Header';
+
 const Resume = () => {
     useEffect(() => {
         document.body.classList.add('resume-page');
@@ -7,11 +9,14 @@ const Resume = () => {
     }, []);
 
   return (
-    <main class="main">
-            
-            
-            
-        </main>
+    <>
+        <Header />
+        <main className="main">
+                
+                
+                
+            </main>
+    </>
   )
 }
 

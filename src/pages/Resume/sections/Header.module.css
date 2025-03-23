@@ -27,7 +27,7 @@
     font-size: var(--size-xs);
 }
 
-.header__menu__list-separator{
+.header__menu__list_separator{
     border: 1px solid var(--clr-black);
     padding-top: 1rem;
 }
@@ -60,7 +60,7 @@
         gap: 0;
     }
 
-    .header__menu__list-separator{
+    .header__menu__list_separator{
         display: none;
     }
 }
