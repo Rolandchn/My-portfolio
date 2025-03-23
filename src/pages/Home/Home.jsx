@@ -20,6 +20,7 @@ const Home = () => {
         lazyLoading();
         mobileNav();
     });
+
     
   return (
     <>

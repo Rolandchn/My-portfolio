@@ -16,7 +16,7 @@
     margin-top: 0.25rem;
 }
 
-.header__menu--list{
+.header__menu__list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: var(--size-xs);
 }
 
-.header__menu--list-separator{
+.header__menu__list-separator{
     border: 1px solid var(--clr-black);
     padding-top: 1rem;
 }
@@ -53,14 +53,14 @@
 }
 
 @media (max-width: 640px){
-    .header__menu--list{
+    .header__menu__list{
         display: grid;
         grid-template-columns: repeat(2, minmax(20ch, 1fr));
         
         gap: 0;
     }
 
-    .header__menu--list-separator{
+    .header__menu__list-separator{
         display: none;
     }
 }

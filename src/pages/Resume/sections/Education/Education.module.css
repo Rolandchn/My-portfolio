@@ -2,40 +2,40 @@
     margin-top: 0.25rem;
 }
 
-.education__info--container{
+.education__info__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.education__info-institute{
+.education__info_institute{
     font-size: var(--size-base);
 
     line-height: 1;
 }
 
-.education__info-location{
+.education__info_location{
     font-size: var(--size-xs);
     font-weight: 700;
 }
 
-.education__info-diploma,
-.education__info-diploma-list{
+.education__info_diploma,
+.education__info_diploma_list{
     font-size: var(--size-sm);
 }
 
-.education__info-diploma-list{
+.education__info_diploma_list{
     list-style-type: none;
 }
 
-.education__info-diploma-date{
+.education__info_diploma_date{
     font-size: var(--size-xs);
     font-style: italic;
     
     float: right;
 }
 
-.education__info-diploma-description{
+.education__info_diploma_description{
     font-size: var(--size-xs);
 
     text-transform: capitalize;
@@ -58,16 +58,16 @@
 }
 
 @media (max-width: 768px){
-    .education__info-institute{
+    .education__info_institute{
         font-size: var(--size-sm);
     }
     
-    .education__info-diploma,
-    .education__info-diploma-list{
+    .education__info_diploma,
+    .education__info_diploma_list{
         font-size: var(--size-xs);
     }
 
-    .education__info-diploma-description{
+    .education__info_diploma_description{
         display: none;
     }
 }

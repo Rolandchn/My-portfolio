@@ -1,11 +1,17 @@
 
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home/Home.jsx'
 import NoPage from './pages/NoPage.jsx'
 import Resume from './pages/Resume/Resume.jsx'
 
+
 function App() {
+    useEffect(() => {
+        console.log(window.location.pathname);
+    })
+
   return (
     <>
         <Router>

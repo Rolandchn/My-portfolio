@@ -1,24 +1,27 @@
 import React from 'react'
 
+import styles from './Education.module.css'
+import clsx from 'clsx'
+
 const Education = () => {
   return (
-    <section class="section education">
-        <h2 class="title">éducation</h2>
-        <hr class="separator"/>
-        <div class="margin-top0 education__info">
-            <div class="education__info--container">
-                <h3 class="education__info-institute">Université Paris Cité</h3>
-                <span class="education__info-location">Paris, 75006</span>
+    <section className={clsx("section", styles.education)}>
+        <h2 className="title">éducation</h2>
+        <hr className="separator"/>
+        <div className={clsx("margin-top0", styles.education__info)}>
+            <div className={styles.education__info__container}>
+                <h3 className={styles.education__info_institute}>Université Paris Cité</h3>
+                <span className={styles.education__info_location}>Paris, 75006</span>
             </div>
-            <ul class="education__info-diploma-list">
+            <ul className={styles.education__info_diploma_list}>
                 <li>
-                    <p>Licence 3 Informatique et Applications<span class="education__info-diploma-date">(actuel)</span></p>
-                    <p class="education__info-diploma-description">- Base de données avancée, Génie logiciel, Algorithmique avancé, Gestion des fonctions d'une entreprise</p>
+                    <p>Licence 3 Informatique et Applications<span className={styles.education__info_diploma_date}>(actuel)</span></p>
+                    <p className={styles.education__info-diploma_description}>- Base de données avancée, Génie logiciel, Algorithmique avancé, Gestion des fonctions d'une entreprise</p>
                 </li>
 
                 <li>
                     <p>Licence 2 Informatique et Applications</p>
-                    <p class="education__info-diploma-description">- Base de données, Conception de site web dynamique, Algorithmique, Programmation impérative, Théorie des langages</p>
+                    <p className={styles.education__info-diploma_description}>- Base de données, Conception de site web dynamique, Algorithmique, Programmation impérative, Théorie des langages</p>
                 </li>
 
                 <li>
