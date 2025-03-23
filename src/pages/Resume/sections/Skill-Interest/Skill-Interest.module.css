@@ -1,0 +1,40 @@
+
+.info{
+    font-size: var(--size-sm);
+}
+
+
+.info{
+    margin-top: 0.25rem;
+}
+
+.margin-top0{
+    margin-top: 0;
+}
+
+
+@media (max-width: 1536px){
+
+}
+
+@media (max-width: 1280px){
+    
+}
+
+@media (max-width: 1024px){
+    
+}
+
+@media (max-width: 768px){
+    .info{
+        font-size: var(--size-xs);
+    }
+}
+
+@media (max-width: 640px){
+
+}
+
+@media (max-width: 475px){
+
+}
