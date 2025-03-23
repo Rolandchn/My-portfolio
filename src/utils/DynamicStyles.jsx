@@ -1,29 +1,28 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const DynamicStyles = () => {
-    const location = useLocation();
+    const location = window.location.pathname;
 
     useEffect(() => {
         let styleSheet;
 
-        console.log(location.pathname)
-
-/*         // Determine which CSS file to load based on route
-        if (location.pathname === "/dashboard") {
-            styleSheet = import("../styles/dashboardUtils.css");
+        // Determine which CSS file to load based on route
+        if (location === "/") {
+            styleSheet = import("../style/utils.css");
+            console.log("a")
         } else {
-            styleSheet = import("../styles/homeUtils.css");
+            styleSheet = import("../style/utils2.css");
+            console.log("b")
         }
 
         return () => {
             // Optional: Clean up styles when navigating away (not always needed)
             document.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
-                if (link.href.includes("dashboardUtils.css") || link.href.includes("homeUtils.css")) {
+                if (link.href.includes("utils.css") || link.href.includes("utils2.css")) {
                     link.remove();
                 }
             });
-        }; */
+        };
     }, [location]);
 
     return null;

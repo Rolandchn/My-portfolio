@@ -6,11 +6,11 @@ import Home from './pages/Home/Home.jsx'
 import NoPage from './pages/NoPage.jsx'
 import Resume from './pages/Resume/Resume.jsx'
 
+import DynamicStyles from './utils/DynamicStyles.jsx'
+
 
 function App() {
-    useEffect(() => {
-        console.log(window.location.pathname);
-    })
+    DynamicStyles()
 
   return (
     <>
