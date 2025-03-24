@@ -9,9 +9,9 @@ const DynamicStyles = () => {
 
         // Determine which CSS file to load based on route
         if (location.pathname === "/") {
-            styleSheet = import("../style/utils.css");
+            styleSheet = import("../style/HomeUtils.css");
         } else {
-            styleSheet = import("../style/utils2.css");
+            styleSheet = import("../style/ResumeUtils.css");
         }
 
         return () => {

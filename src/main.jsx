@@ -6,7 +6,7 @@ import './style/modern-normalize.css'
 
 import App from './App.jsx'
 
-import './style/utils.css'
+import './style/HomeUtils.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
