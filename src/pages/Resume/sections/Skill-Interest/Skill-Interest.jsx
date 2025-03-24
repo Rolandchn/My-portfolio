@@ -5,7 +5,7 @@ import styles from './Skill-Interest.module.css'
 
 const SkillInterest = () => {
   return (
-    <section className={clsx("section", skill-interest)}>
+    <section className={clsx("section", styles.skill_interest)}>
         <h2 className="title">Compétences & intérêts</h2>
         <hr className="separator"/>
         <p className={clsx(styles.info, "margin-top0")}><strong>Compétences</strong>: ReactJS, JavaScript, PHP | Python, Java, C | Trilingue (français, anglais et chinois)
