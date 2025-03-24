@@ -9,14 +9,14 @@ const Resume = () => {
     }, []);
 
   return (
-    <>
+    <div className="container main__container">
         <Header />
         <main className="main">
-                
-                
-                
+        
+        
+        
             </main>
-    </>
+    </div>
   )
 }
 

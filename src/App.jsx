@@ -1,5 +1,4 @@
 
-import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home/Home.jsx'
@@ -10,16 +9,17 @@ import DynamicStyles from './utils/DynamicStyles.jsx'
 
 
 function App() {
-    DynamicStyles()
-
   return (
     <>
         <Router>
             <Routes>
-                {/* Home page */}
-                <Route index element={<Home/>}/>
+                <Route element={<DynamicStyles />}> 
+                    {/* Home page */}
+                    <Route index element={<Home/>}/>
 
-                <Route caseSensitive path="/resume" element={<Resume/>} />
+                    {/* Resume page */}
+                    <Route caseSensitive path="/resume" element={<Resume/>} />
+                </Route>
             
                 {/* Default page */}
                 <Route path='*' element={<NoPage/>}/>

@@ -1,18 +1,17 @@
 import React, { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
 const DynamicStyles = () => {
-    const location = window.location.pathname;
+    const location = useLocation();
 
     useEffect(() => {
         let styleSheet;
 
         // Determine which CSS file to load based on route
-        if (location === "/") {
+        if (location.pathname === "/") {
             styleSheet = import("../style/utils.css");
-            console.log("a")
         } else {
             styleSheet = import("../style/utils2.css");
-            console.log("b")
         }
 
         return () => {
@@ -25,7 +24,7 @@ const DynamicStyles = () => {
         };
     }, [location]);
 
-    return null;
+    return <Outlet/>;
 };
 
 export default DynamicStyles;
