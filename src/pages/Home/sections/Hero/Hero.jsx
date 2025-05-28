@@ -1,11 +1,13 @@
 import React from 'react'
 import clsx from 'clsx'
 
+import util_styles from '../../Home.module.css'
 import styles from './Hero.module.css'
+
 
 const HeroSection = () => {
   return (
-    <section className={clsx("container", styles.hero)}>
+    <section className={clsx(util_styles.container, styles.hero)}>
         <img className={styles.hero__img} src="/photo.png" alt="profile picture" width="500" height="500"/>
         <p className={styles.hero__subtitle}>Hi, I'm Roland 👋</p>
     
