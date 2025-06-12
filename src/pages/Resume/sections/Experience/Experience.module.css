@@ -1,22 +1,26 @@
 
+.experiences:first-child{
+    margin-top: 0;
+    color: red;
+}
 
 .experience__info{
     margin-top: 0.25rem;
 }
 
 
-.experience__info--container{
+.experience__info__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.experience__info-title{
+.experience__info_title{
     font-size: var(--size-base);
     line-height: 1;
 }
 
-.experience__info-location{
+.experience__info_location{
     font-size: var(--size-xs);
     font-weight: 700;
 }
