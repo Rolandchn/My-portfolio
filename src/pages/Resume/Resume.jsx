@@ -6,6 +6,8 @@ import Education from './sections/Education/Education'
 import SkillInterest from './sections/Skill-Interest/Skill-Interest'
 import Experience from './sections/Experience/Experience.jsx'
 
+import resumeStyle from '../../style/ResumeUtils.module.css'
+
 const Resume = () => {
     useEffect(() => {
         document.body.classList.add('resume-page');
@@ -13,8 +15,8 @@ const Resume = () => {
     }, []);
 
   return (
-    <div className="container">
-        <main className="main">
+    <div className={resumeStyle.container}>
+        <main className={resumeStyle.main}>
             <Header />
             <Summary />
             <Experience />

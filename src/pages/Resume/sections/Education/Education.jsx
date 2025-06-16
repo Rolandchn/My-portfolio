@@ -1,14 +1,17 @@
 import React from 'react'
+import clsx from 'clsx'
 
 import styles from './Education.module.css'
-import clsx from 'clsx'
+
+import resumeStyle from '../../../../style/ResumeUtils.module.css'
+
 
 const Education = () => {
   return (
-    <section className={clsx("section", styles.education)}>
-        <h2 className="title">éducation</h2>
-        <hr className="separator"/>
-        <div className={clsx("margin-top0", styles.education__info)}>
+    <section className={clsx(resumeStyle.section, styles.education)}>
+        <h2 className={resumeStyle.title}>éducation</h2>
+        <hr className={resumeStyle.separator}/>
+        <div className={clsx(resumeStyle.margin_top0, styles.education__info)}>
             <div className={styles.education__info__container}>
                 <h3 className={styles.education__info_institute}>Université Paris Cité</h3>
                 <span className={styles.education__info_location}>Paris, 75006</span>

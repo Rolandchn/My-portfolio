@@ -29,6 +29,7 @@
     border: 1px solid black;
     width: 21cm;
     
+    margin-inline: auto;
     padding: 1.27cm;
 }
 
