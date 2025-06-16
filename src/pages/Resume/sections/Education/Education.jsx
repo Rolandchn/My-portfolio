@@ -18,7 +18,7 @@ const Education = () => {
             </div>
             <ul className={styles.education__info_diploma_list}>
                 <li>
-                    <p>Licence 3 Informatique et Applications<span className={styles.education__info_diploma_date}>(actuel)</span></p>
+                    <p>Licence 3 Informatique et Applications MIAGE<span className={styles.education__info_diploma_date}>(actuel)</span></p>
                     <p className={styles.education__info_diploma_description}>- Base de données avancée, Génie logiciel, Algorithmique avancé, Gestion des fonctions d'une entreprise</p>
                 </li>
 

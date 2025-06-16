@@ -1,5 +1,18 @@
 export const experiences = [
     {
+        title: 'OFFOLIO',
+        location: 'Paris, 75011',
+        description: 'Développeur fullstack (Java, SQL React)',
+        date: 2025,
+        points: [
+            "Développé et maintenu un système traitement de données au sein d'une architecture complexe.",
+            'Collaboré avec les développeur sénior pour implémenter des fonctionnalités backend optimale et efficace.',
+            "Apporté et implémenté un système de 'multi-threading' pour optimiser la performance et expérience client sur le traitement de données, en améliorant la performance de plus de 40%.",
+            '...',
+            '...'
+        ]
+    },
+    {
         title: 'Recherche d’images par le contenu',
         location: 'Université Paris Cité',
         description: 'Développeur fullstack (HTML5, CSS3, PHP, Python)',
@@ -30,20 +43,8 @@ export const experiences = [
         date: 2025,
         points: [
             "Conçu et développé un mini système de gestion de bases de données (SGBD), comprenant des fonctionnalités telles que la gestion des fichiers, le stockage des données et l'exécution de requêtes SQL simples.",
-            "Développé un moteur d'exécution supportant 4 types de requêtes SQL (INSERT, SELECT, UPDATE, DELETE) ainsi que des sous requêtes du type BULKINSERT et RESETDB, avec une capacité à traiter jusqu'à 10 000 requêtes par minute sur un jeu de données simulé.",
+            "Développé un moteur d'exécution supportant l'ensemble des requêtes CRUD ainsi que des sous requêtes du type BULKINSERT et RESETDB, avec une capacité à traiter jusqu'à 10 000 requêtes par minute sur un jeu de données simulé.",
             "Développé un système de stockage local pour sauvegarder les données insérées par l'utilisateur."
-        ]
-    },
-    {
-        title: 'Big data application',
-        location: 'Université Paris Cité',
-        description: 'Web Développeur (HTML5, CSS3)',
-        date: 2025,
-        points: [
-            "Développé une interface utilisateur pour l'application Bayesian Database, orientée Big Data et Machine Learning.",
-            "Conçu une interface utilisateur responsive pour une compatibilité avec 100% des tailles d'écran (desktop, mobile, tablette) et amélioré l'expérience utilisateur.",
-            'Mise en place de CSS Modules pour garantir une isolation des styles et éviter les conflits dans les composants React.',
-            'Utilisation de naming conventions spécifiques pour assurer la lisibilité et la maintenance du code.'
         ]
     },
     {
