@@ -4,9 +4,9 @@ import clsx from 'clsx'
 import styles from '../pages/Resume/sections/Experience/Experience.module.css'
 
 
-const ExperienceBlock = ({title, location, description, date, points}) => {
+const ExperienceBlock = ({title, location, description, date, points, className}) => {
     return (
-        <div className={styles.experience__info}>
+        <div className={clsx(styles.experience__info, className)}>
             <div className={styles.experience__info_container}>
                 <h3 className={styles.experience__info_title}>{title}</h3>
                 <span className={styles.experience__info_location}>{location}</span>

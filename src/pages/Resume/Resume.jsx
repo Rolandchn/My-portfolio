@@ -13,7 +13,7 @@ const Resume = () => {
     }, []);
 
   return (
-    <div className="container main__container">
+    <div className="container">
         <main className="main">
             <Header />
             <Summary />

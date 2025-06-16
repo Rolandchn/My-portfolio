@@ -26,17 +26,12 @@
 
 
 .container{
-    width: 1536px;
-    margin-inline: auto;
-    padding-inline: 0.5rem;
-}
-
-.main__container{
     border: 1px solid black;
     width: 21cm;
     
     padding: 1.27cm;
 }
+
 
 .separator{
     margin-top: 0.25rem;
@@ -57,7 +52,7 @@
     line-height: 1;
 }
 
-.margin-top0{
+.margin_top0{
     margin-top: 0;
 }
 

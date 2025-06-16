@@ -1,15 +1,16 @@
 import React from 'react'
-import styles from './Experience.module.css'
+import clsx from 'clsx'
 
 import ExperienceBlock from '../../../../components/ExperienceBlock.jsx'
 import { experiences } from '../../../../constants/index.jsx'
 
+import resumeStyles from '../../../../style/ResumeUtils.module.css'  
 
 const Experience = () => {
   return (
-    <section className="section experience">
-        <h2 className="title">Expérience</h2>
-        <hr className="separator"/>
+    <section className={clsx(resumeStyles.section)}>
+        <h2 className={resumeStyles.title}>Expérience</h2>
+        <hr className={resumeStyles.separator}/>
 
         {
             experiences.map((experience, index) =>
@@ -20,6 +21,7 @@ const Experience = () => {
                     description = {experience.description}
                     date = {experience.date}
                     points = {experience.points}
+                    className = {index === 0 ? resumeStyles.margin_top0 : ''}
                 />
             )
         }
