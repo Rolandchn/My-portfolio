@@ -26,13 +26,59 @@
 
 
 .container{
+    position: relative;
     border: 1px solid black;
     width: 21cm;
+
     
     margin-inline: auto;
     padding: 1.27cm;
 }
 
+.return_container{
+    height: 100%;
+    
+    position: absolute;
+    left: -5rem;
+    top: 0;
+}
+
+.return__btn{
+    color: var(--clr-black);
+    
+    position: sticky;
+    top: 0;
+}
+
+.return__icon{
+    width: var(--size-6xl);
+    height: auto;
+    
+    padding: 1rem;
+}
+
+.download_container{
+    height: 100%;
+    
+    position: absolute;
+    right: -4rem;
+    top: 0;
+
+}
+
+.download__btn{
+    color: var(--clr-black);
+
+    position: sticky;
+    top: 0;
+}
+
+.download__icon{
+    width: var(--size-6xl);
+    height: auto;
+    
+    padding: 1rem;
+}
 
 .separator{
     margin-top: 0.25rem;
