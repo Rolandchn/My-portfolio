@@ -2,6 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 import { Link } from 'react-router-dom'
 
+import util_styles from '../Home.module.css'
 import styles from './Header.module.css'
 
 import darkMode from '../../../utils/dark-mode'
@@ -9,7 +10,7 @@ import darkMode from '../../../utils/dark-mode'
 
 const Header = () => {
   return (
-    <header className={clsx("container", styles.header)}>
+    <header className={clsx(util_styles.container, styles.header)}>
         <nav>
             <ul className={styles.header__menu}>
                 <li>

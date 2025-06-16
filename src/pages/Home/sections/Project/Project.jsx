@@ -1,11 +1,13 @@
 import React from 'react'
 import clsx from 'clsx'
 
+import util_styles from '../../Home.module.css'
 import styles from './Project.module.css'
+
 
 const ProjectSection = () => {
   return (
-    <section id="project" className={clsx("container section", styles.project)}>
+    <section id="project" className={clsx(util_styles.container, util_styles.section, styles.project)}>
         <h2 className={styles.project__title}>Project</h2>
         <p className={styles.project__description}>Those are the projects built to address a need. The platform features a fully responsive design, ensuring an optimal user experience across all devices. It was developed using HTML5, CSS3 and JavaScript.</p>
     

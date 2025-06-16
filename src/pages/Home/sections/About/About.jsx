@@ -1,12 +1,14 @@
 import React from 'react'
 import clsx from 'clsx'
 
+import util_styles from '../../Home.module.css'
 import styles from './About.module.css'
+
 
 
 const AboutSection = () => {
   return (
-    <section id="about" className={clsx("container section", styles.about)}>
+    <section id="about" className={clsx(util_styles.container, util_styles.section, styles.about)}>
         <div>
             <h2 className={styles.about__title}>About</h2>
             <p className={styles.about__description}>
