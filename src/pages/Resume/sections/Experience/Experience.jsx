@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import ExperienceBlock from '../../../../components/ExperienceBlock.jsx'
 import { experiences } from '../../../../constants/index.jsx'
 
-import resumeStyles from '../../../../style/ResumeUtils.module.css'  
+import resumeStyles from '../../Resume.module.css'  
 
 const Experience = () => {
   return (

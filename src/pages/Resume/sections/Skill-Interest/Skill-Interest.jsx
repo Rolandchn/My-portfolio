@@ -3,7 +3,7 @@ import React from 'react'
 
 import styles from './Skill-Interest.module.css'
 
-import resumeStyle from '../../../../style/ResumeUtils.module.css'
+import resumeStyle from '../../Resume.module.css'
 
 
 const SkillInterest = () => {

@@ -3,7 +3,7 @@ import clsx from 'clsx'
 
 import styles from './Education.module.css'
 
-import resumeStyle from '../../../../style/ResumeUtils.module.css'
+import resumeStyle from '../../Resume.module.css'
 
 
 const Education = () => {

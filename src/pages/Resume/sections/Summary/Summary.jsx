@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Summary.module.css'
 
-import resumeStyle from '../../../../style/ResumeUtils.module.css'
+import resumeStyle from '../../Resume.module.css'
 
 
 const Summary = () => {
