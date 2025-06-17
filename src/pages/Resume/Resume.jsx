@@ -1,6 +1,7 @@
 import { React, useEffect, createRef } from 'react'
 import { Link } from "react-router-dom"
 import { useScreenshot, createFileName } from 'use-react-screenshot'
+import jsPDF from 'jspdf';
 
 import Header from './sections/Header'
 import Summary from './sections/Summary/Summary'
@@ -16,22 +17,32 @@ const Resume = () => {
         return () => document.body.classList.remove('resume-page'); // Clean up on unmount
     }, []);
 
-    const [image, takeScreenshot] = useScreenshot({
-        type: 'image/pdf',
-        quality: 1.0
-    });
-
-    const ref = createRef(null);
-
-    const download = (image, {name = 'Roland_CHEN', extension = 'pdf'} = {}) =>  {
-        const a = document.createElement('a');
-        a.href = image;
-        a.download = createFileName(extension, name);
-        a.click()
-    };
+    const downloadPDF = (imgData) => {
+        // Create an image to get actual size
+        const img = new Image();
+        img.src = imgData;
     
-    const downloadScreenshot = () => {
-        takeScreenshot(ref.current).then(download);
+        img.onload = () => {
+          const imgWidth = img.width;
+          const imgHeight = img.height;
+    
+          const pdf = new jsPDF({
+            orientation: 'portrait',
+            unit: 'px',
+            format: [imgWidth, imgHeight],
+          });
+    
+          pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+          pdf.save('screenshot.pdf');
+        };
+      };    
+
+    const [image, takeScreenshot] = useScreenshot();
+    const ref = createRef(null);
+    
+    const downloadScreenshot = async () => {
+        const img = await takeScreenshot(ref.current);
+        downloadPDF(img);
     };
 
   return (
