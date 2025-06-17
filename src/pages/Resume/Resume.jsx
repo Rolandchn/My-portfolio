@@ -16,13 +16,14 @@ const Resume = () => {
         return () => document.body.classList.remove('resume-page'); // Clean up on unmount
     }, []);
 
-    const ref = createRef(null);
     const [image, takeScreenshot] = useScreenshot({
-        type: 'image/jpeg',
+        type: 'image/pdf',
         quality: 1.0
     });
 
-    const download = (image, {name = 'img', extension = 'jpg'} = {}) =>  {
+    const ref = createRef(null);
+
+    const download = (image, {name = 'Roland_CHEN', extension = 'pdf'} = {}) =>  {
         const a = document.createElement('a');
         a.href = image;
         a.download = createFileName(extension, name);
